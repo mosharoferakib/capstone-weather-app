@@ -1,0 +1,100 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/5466409.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+#lab_social_icon_footer {
+    padding: 5px 5;
+    background-color:gainsboro;
+    opacity: .7;
+  }
+  
+  #lab_social_icon_footer a {
+    color: #333;
+  }
+  
+  #lab_social_icon_footer #social-fb:hover {
+    color:blue;
+  }
+  
+  #lab_social_icon_footer #social-tw:hover {
+    color: #4099FF;
+  }
+  
+  #lab_social_icon_footer #social-gp:hover {
+    color: #d34836;
+  }
+  
+  #lab_social_icon_footer #social-em:hover {
+    color:darkgreen;
+  }
+
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+
+  #copyright{
+    text-align: center;
+  }
+
+  #city{
+
+    display: flex;
+    flex-direction: column;
+    font-size:large
+
+  }
+
+  #search{
+    text-align: center;
+  }
+
+  #logincss{
+    text-align: center;
+  }
+
+  #registercss{
+    text-align: center;
+  }
+
+  .container-fluid{
+    background-color:gainsboro;
+  }
+
+  #lbody{
+    background-image: url('https://cdn.wallpapersafari.com/12/58/oGCE2w.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #rbody{
+    background-image: url('https://marketplace.canva.com/EAFHm4JWsu8/1/0/1600w/canva-pink-landscape-desktop-wallpaper-HGxdJA_xIx0.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #upage{
+    background-image: url('https://www.itl.cat/pngfile/big/242-2421741_desktop-wallpaper-8k.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #pbody{
+    background-image: url('https://cutewallpaper.org/23/aesthetic-laptop-wallpaper-mountans/2882518665.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }

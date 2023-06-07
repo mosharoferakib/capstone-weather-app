@@ -1,0 +1,33 @@
+{% extends "base.jinja" %}
+
+{% block content%}
+<body id="rbody">
+<div id="registercss"><form action="" method="post">
+<h4>Register here</h4>
+{{ form.hidden_tag() }}
+
+<p>
+    {{ form.username(size=35) }}<br>
+    {{ form.username.label }}
+</p>
+<p>
+    {{ form.email(size=35) }}<br>
+    {{ form.email.label }}
+    {% for error in form.email.errors %}
+      <span class="err_messg">{{ error }}</span>
+    {% endfor %}
+</p>
+<p>
+    {{ form.password(size=35) }}<br>
+    {{ form.password.label }}
+    {% for error in form.password.errors %}
+      <span class="err_msg">{{ error }}</span>
+    {% endfor %}
+</p>
+<p>{{ form.submit() }}</p>
+</form>
+
+</div>
+
+</body>
+{% endblock %}

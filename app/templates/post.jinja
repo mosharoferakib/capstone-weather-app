@@ -1,0 +1,16 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+<body id="pbody">
+<form action="" method="post">
+<h4>Log your weather information here</h4>
+{{ form.hidden_tag() }}
+
+<p>
+    {{ form.body(size=50) }}
+</p>
+<p>{{ form.submit() }}</p>
+</form>
+</body>
+
+{% endblock %}

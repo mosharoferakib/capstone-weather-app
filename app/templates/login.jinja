@@ -1,0 +1,27 @@
+{% extends "base.jinja" %}
+
+{% block content%}
+<body id="lbody">
+<div id="logincss"><form action="" method="post">
+
+<br>
+<h4>login</h4>
+{{ form.hidden_tag() }}
+
+<p>
+    {{ form.username(size=40) }}<br>
+    {{ form.username.label }}
+</p>
+<p>
+    {{ form.password(size=40) }}<br>
+    {{ form.password.label }}
+    {% for error in form.password.errors %}
+      <span class="err_msg">{{ error }}</span>
+    {% endfor %}
+</p>
+<p>{{ form.submit() }}</p>
+</form>
+</div>
+
+</body>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.jinja" %}
+
+{% block content%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <form action="/" method="post" style="padding: 10px; text-align:center;">
+        <div style="display: grid; justify-content: center;">
+        <input style="width: 400px;" placeholder="Enter city name or Zip code" type="text" name="city" id="city" required>
+        </div>
+        <br>
+        <button style="background-color: coral; border:solid; padding:5px; border-radius:5px;" type="submit">Check Weather</button>
+    </form>
+    {% if temperature %}
+    <div style="text-align: center; width: 300px; margin:auto; background-color:azure; opacity: 0.6;" >
+        <div>
+            <h4>Current weather in {{ city }}</h4>
+            <p>Temperature: {{ temperature }}F</p>
+            <p>Humidity: {{ humidity }}%</p>
+            <p>Description: {{ description }}</p>
+            <p>High Temperature: {{ temp_high }}F</p>
+            <p>Low Temperature: {{ temp_low }}F</p>
+
+            <img src="{{ icon_url }}" style="width: 100px;">
+        </div>
+    </div>    
+    {% elif error %}
+        <h5 style="text-align: center;">{{ error }}</h5>
+    {% endif %}
+    
+</body>
+</html>
+{% endblock %}

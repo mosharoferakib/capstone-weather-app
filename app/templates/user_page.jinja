@@ -1,0 +1,19 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+<body id="upage">
+<h3 style="text-align: center;">{{ user.username }}'s weather log</h3>
+
+
+{% for post in user.posts %}
+<div style="display:flex; flex-direction:column-reverse; border:solid grey; border-radius: 10px; background-color:azure; opacity: 0.6; color:black; text-align: center; width: 500px; margin:auto;">
+    <p style="color: black;">{{ post.body }}</p>
+    <br>
+
+    <p style="color:green;"> <small>{{ post.timestamp }}</small> </p>
+
+</div>
+
+</body>
+{% endfor %}
+{% endblock  %}
