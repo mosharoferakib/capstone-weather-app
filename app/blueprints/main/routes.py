@@ -8,7 +8,6 @@ import requests
 
 from . import bp
 from app import app 
-from app.forms import UserSearchForm
 
 app = Flask(__name__)
 API_KEY = "311386c7b759f960046806ae93881075"
